@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+</head>
+<body class="h-screen w-screen bg-[#060503] ">
+
+    <!-- ================== container ==================-->
+    <div class=" flex flex-col justify-center  ">
+        <!-- ================== bg ==================-->
+        <div class="background1">
+            
+            <!-- ================== top ==================-->
+            <div class="top flex justify-between   px-28 py-10 ">
+                <div class="left">
+                    <h1 class="text-[70px] font-extrabold " id="city-name">Cairo</h1>
+                    <h1 class="text-[50px] font-bold ">EG.</h1>
+                    <h3 class="text-[22px] font-semibold " id="main-date">Monday 004 July</h3>
+                </div>
+                <!-- <div class="right">
+                </div> -->
+            </div>
+            
+        </div>
+
+        <!-- ================== cards ==================-->
+        <div class="cards w-screen flex flex-row justify-around ">
+            <!-- =============== card ================-->
+            <div class="flex flex-col gap-2 w-[13%] h-[200px]
+            bg-white rounded-b-xl ">
+                <!-- ========= header ========-->
+                <div class="header">
+                    <h3 class="text-3xl font-semibold p-3 text-white flex items-center
+                    bg-gradient-to-r from-sky-500 to-indigo-500">Fajr</h3>
+                </div>
+                <!-- ========= date ==========-->
+                <div class=" w-full h-full flex items-center justify-center">
+                    <h1 class="text-6xl  " id="fagr-date">04:20</h1>
+                </div>
+            </div>
+            <!-- =============== card ================-->
+            <div class="flex flex-col gap-2 w-[13%] h-[200px]
+            bg-white rounded-b-xl ">
+                <!-- ========= header ========-->
+                <div class="header">
+                    <h3 class="text-3xl font-semibold p-3 text-white flex items-center
+                    bg-gradient-to-r from-sky-500 to-indigo-500">Sunrise</h3>
+                </div>
+                <!-- ========= date ==========-->
+                <div class=" w-full h-full flex items-center justify-center">
+                    <h1 class="text-6xl "id="sunrise-date" >04:20</h1>
+                </div>
+            </div>
+            <!-- =============== card ================-->
+            <div class="flex flex-col gap-2 w-[13%] h-[200px]
+            bg-white rounded-b-xl ">
+                <!-- ========= header ========-->
+                <div class="header">
+                    <h3 class="text-3xl font-semibold p-3 text-white flex items-center
+                    bg-gradient-to-r from-sky-500 to-indigo-500">Dhuhr</h3>
+                </div>
+                <!-- ========= date ==========-->
+                <div class=" w-full h-full flex items-center justify-center">
+                    <h1 class="text-6xl  " id="dhuhr-date" >04:20</h1>
+                </div>
+            </div>
+            <!-- =============== card ================-->
+            <div class="flex flex-col gap-2 w-[13%] h-[200px]
+            bg-white rounded-b-xl ">
+                <!-- ========= header ========-->
+                <div class="header">
+                    <h3 class="text-3xl font-semibold p-3 text-white flex items-center
+                    bg-gradient-to-r from-sky-500 to-indigo-500" >Asr</h3>
+                </div>
+                <!-- ========= date ==========-->
+                <div class=" w-full h-full flex items-center justify-center">
+                    <h1 class="text-6xl  " id="asr-date">04:20</h1>
+                </div>
+            </div>
+            <!-- =============== card ================-->
+            <div class="flex flex-col gap-2 w-[13%] h-[200px]
+            bg-white rounded-b-xl ">
+                <!-- ========= header ========-->
+                <div class="header">
+                    <h3 class="text-3xl font-semibold p-3 text-white 
+                    flex items-center
+                    bg-gradient-to-r from-sky-500 to-indigo-500">Maghrib</h3>
+                </div>
+                <!-- ========= date ==========-->
+                <div class=" w-full h-full flex items-center justify-center">
+                    <h1 class="text-6xl  "id="maghrib-date" >04:20</h1>
+                </div>
+            </div>
+            <!-- =============== card ================-->
+            <div class="flex flex-col gap-2 w-[13%] h-[200px]
+            bg-white rounded-b-xl ">
+                <!-- ========= header ========-->
+                <div class="header">
+                    <h3 class="text-3xl font-semibold p-3 text-white flex items-center
+                    bg-gradient-to-r from-sky-500 to-indigo-500">Isha</h3>
+                </div>
+                <!-- ========= date ==========-->
+                <div class=" w-full h-full flex items-center justify-center">
+                    <h1 class="text-6xl  " id="isha-date">04:20</h1>
+                </div>
+            </div>
+        </div>
+        <!-- ==================== City Option ====================-->
+        <div class="option flex flex-col items-center justify-center  mt-14 ">
+            <select class="bg-transparent text-white
+            focus:outline-none focus:border-indigo-500 rounded-full 
+            focus:ring-1 focus:ring-indigo-500
+            py-1 px-2 shadow-md border
+            text-lg font-bold w-[300px] h-[35px]  "
+            name="" id="cities-select">
+            </select>
+        </div>
+
+    </div>
+
+<style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .background1{
+            background-image: url("bg2.jpg");
+            object-fit: cover;
+            width: 100%;
+            height: 400px;
+            color: #fff;
+        }
+</style>
+<script src="./node_modules/axios/dist/axios.min.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>
